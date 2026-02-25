@@ -1,0 +1,21 @@
+.hero {
+  width: 100%;
+  height: auto;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media(max-width:480px) {
+  .swiper {
+    height: 260px;
+  }
+}

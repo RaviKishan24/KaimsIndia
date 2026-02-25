@@ -1,0 +1,155 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #E6F0ff;
+}
+
+
+.header-text {
+    text-align: center;
+    background-color: #E6F0ff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #274c70;
+    padding: 0 60px;
+    position: relative;
+}
+
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+}
+
+.mid-section {
+    display: flex;
+    gap: 15px;
+}
+
+.mid-section a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.side-icon {
+    display: flex;
+    gap: 10px;
+}
+
+.side-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+}
+
+.side-icon img:hover {
+    transform: scale(1.1);
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #274c70;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 20px;
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+
+.mobile-menu.open {
+    right: 0;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+.mid-section a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px; 
+    width: 100%;
+    background-color: #00ff00; 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.mid-section a:hover::after {
+    transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+    nav{
+        padding:  0 10px;
+    }
+    .mid-section,
+    .side-icon {
+        display: none; 
+    }
+
+    .hamburger {
+        display: block; 
+    
+        
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text {
+        font-size: 12px;
+        padding: 5px;
+    }
+}

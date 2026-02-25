@@ -1,0 +1,136 @@
+.Foooter_container {
+    width: 100%;
+    height: auto;
+    background-color: #274c70;
+    color: #cbd5e1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.Foooter_container_links {
+padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 50px;
+    background-color: #274c70;
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+.footer-link {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+
+
+.footer-link h2 {
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer-link h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #22c55e;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-radius: 10px;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+
+ul li a:hover {
+    color: #22c55e;
+    padding-left: 6px;
+}
+
+
+.logoanddetails p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-top: 12px;
+    color: #cbd5e1;
+}
+
+.footer_socialmedialinks {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+
+.footer_socialmedialinks img {
+    height: 36px;
+    width: 36px;
+    padding: 6px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.footer_socialmedialinks img:hover {
+    background: white;
+    transform: translateY(-5px) scale(1.1);
+}
+
+
+
+.Foooter_container-copyright {
+    text-align: center;
+    padding: 10px;
+    color: #94a3b8;
+    font-weight: 600;
+    font-size: 18px;
+    border-top: 1px solid #1e293b;
+    margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+   
+    .Foooter_container_links > .logoanddetails {
+        grid-column: 1 / -1;
+    }
+
+    
+
+}
+
+@media (max-width: 600px) {
+    
+    .Foooter_container_links {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .Foooter_container_links > .footer-link {
+        min-width: 100%;
+    }
+}
