@@ -4,8 +4,9 @@ import "./About.css"
 function About() {
   return (
     <div className='about-container'>
-      <h1 className='about-heading'>Kaims India</h1>
-      <p className='about-para'><strong>Powered By SLR Enterprises</strong></p>
+      <h1 className='about-heading'>About us</h1>
+      <h1 className='about-heading'>Kaims India <span className='about-para'> - Powered By SLR Enterprises</span></h1>
+
 
       <div className='about-text'>
         <p>

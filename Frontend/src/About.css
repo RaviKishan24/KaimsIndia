@@ -1,15 +1,15 @@
 .about-container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 40px 20px; /* Added horizontal padding for small screens */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #334155; 
-    line-height: 1.8; 
+    color: #334155;
+    line-height: 1.8;
 }
 
 .about-heading {
     text-align: center;
-    color: #274c70; 
+    color: #274c70;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -17,7 +17,7 @@
 
 .about-para {
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 500;
     margin-bottom: 30px;
     color: #475569;
@@ -29,6 +29,45 @@
 }
 
 .about-text p strong {
-    font-weight: 700; 
-    color: #1e40af; 
+    font-weight: 700;
+    color: #1e40af;
+}
+
+
+
+@media (max-width: 768px) {
+    .about-heading {
+        font-size: 28px;
+    }
+
+    .about-para {
+        font-size: 20px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .about-container {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-heading {
+        font-size: 24px;
+    }
+
+    .about-para {
+        font-size: 18px;
+    }
+
+    .about-text p {
+        font-size: 13px;
+    }
+
+    .about-container {
+        margin: 20px 10px;
+        padding: 20px 10px;
+    }
 }
